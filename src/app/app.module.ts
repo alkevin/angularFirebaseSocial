@@ -4,6 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import * as firebase from 'firebase/app';
+import 'firebase/auth';
+import { firebaseConfig } from 'src/environments/environment.prod';
+
+firebase.initializeApp(firebaseConfig);
+
 @NgModule({
   declarations: [
     AppComponent
